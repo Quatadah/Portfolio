@@ -1,0 +1,35 @@
+section{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+}
+
+em{
+    color:lightskyblue
+}
+#center-parag{
+    text-align: center;
+}
+
+#school {
+    color: lightskyblue;
+}
+footer{
+
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
