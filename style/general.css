@@ -1,5 +1,5 @@
 body{
-    background-color:darkslategray;
+    background-color:darkcyan;
     color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -36,7 +36,21 @@ a{
 
 }
 
-.nav-ele:hover{
+.nav-ele a:hover{
     font-weight: bold;
     border-bottom: 1px solid lightskyblue;
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    font-weight: bold;
+    border-bottom: 1px solid lightskyblue;
+}
+
+footer{
+
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
 }
