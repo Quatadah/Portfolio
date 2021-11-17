@@ -6,6 +6,7 @@
 #form{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .line{
@@ -15,8 +16,8 @@
     color: black;
     opacity: 0.5;
 }
-section div form div input,
-section div form div textarea {
+input,
+textarea {
     
     box-shadow: 6px 6px 6px black;
     border: 3px solid whitesmoke;
@@ -25,7 +26,7 @@ section div form div textarea {
     margin-bottom: 5px;
 }
 
-section div form div input{
+input{
     height: 25px;
 }
 
@@ -34,14 +35,28 @@ section div form div input{
 }
 
 .btn{
-    padding: 5px;
+    height: auto;
+    padding: 15px 30px;
+    margin: 4px 2px;
     border: none;
-    background-color:darkcyan;
-    color: whitesmoke;
+    background-color:#fff;
+    color: darkcyan;
     font-weight: bold;
 }
 
 .btn:hover{
     cursor: pointer;
     transform: translate3d(1px, 1px, 1px);
+}
+
+label{
+    font-weight: bold;
+    display: inline-block;
+    clear: left;
+    width: 100px;
+    text-align: right;
+}
+
+#your-message{
+    font-weight: bold;
 }
