@@ -27,14 +27,19 @@
     <section>
         <h1 id="contact-title">CONTACT ME</h1>
         <div id="form">
-            <form method="post" type="submit">
+ 
+            <form method="post" type="submit" action="../script/form.php"> 
+                
                 <div class="line">
                     <label for="name">Name :</label>
                     <input type="text" id="name" placeholder="Name" size="40">
+                    <span class="error">* <?php echo $nameErr ?></span>
+                    
                 </div>
                 <div class="line">
                     <label for="email">Email :</label>
                     <input type="email" id="email" placeholder="Email" size="40">
+                    <span class="error">* <?php echo $emailErr ?></span>
                 </div>
                 <div class="line">
                     <label for="subject">Subject :</label>
@@ -47,14 +52,17 @@
                 </div>
             
                 <div id="btn-area">
-                    <input class="btn" type="submit" value="Send Message"> 
+                    <input class="btn" name="submit" type="submit" value="Send Message"> 
                 </div>
-                
+    
             </form>
+            
         </div>
     </section>
     <footer>
         <h3>&copy; Quatadah Nasdami 2021</h3>
     </footer>
 </body>
+
+
 </html>
